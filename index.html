@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <meta name="description" content="our service to Improve your programming skills and reach your goal">
+    <link rel="shortcut icon" href="imgs/47820f59e4ee115879e654d783250082_icon.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body >
+  <nav class="navbar navbar-expand-lg  navbar-dark text-bg-dark bg-black" >
+      <div class="container px-3">
+        <a class="navbar-brand  col-2 col-lg-1" href="index.html"><img src="imgs/main.jpg" class="w-50" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-earth text-info "></i></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            
+                <li class="nav-item">
+                    <a class="nav-link active" href="#current" aria-currentpa="page">
+                      <i class="fa-solid fa-location "></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Cairo">Cairo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Landau">Landau</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#NewYork">New York</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#London">London</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#Berlin">Berlin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Paris">Paris</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Tokyo">Tokyo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Madrid">Madrid</a>
+                </li>
+              </ul>
+             
+              <!-- <div class="ms-auto  text-end">
+                <a href="index.html" class="text-decoration-none text-white fw-bold">log out</a>
+  
+              </div> -->
+           
+            
+        </div>
+      </div>
+  </nav>
+    <div class="app">
+      <div class="container py-5 ">
+        <div class="row pt-4 justify-content-center ">
+          <div class="col-lg-9 mb-4">
+
+<div class="form-floating mb-3">
+  <input type="text" class=" fs-5 fw-bold form-control rounded-pill ps-4" id="search" placeholder="name@example.com">
+  <label for="search" class="ms-3 text-info fw-bold">Enter your City</label>
+</div>
+          </div>
+
+          <div class="card-group flex-column flex-md-row px-lg-5 my-3">
+            <!-- <div class="card border-dark mb-0 border-2 ">
+               <div class="card-header bg-transparent border-dark border-2 d-flex justify-content-between ">
+                <span class="text-muted lh-1">friday</span>
+                <span class="text-muted lh-1">4 August</span>
+               </div>
+              <div class="card-body ">
+                <h3 class="fs-6">Cairo</h3>
+                <div class="d-flex align-items-center gap-4">
+                  <h4 class="f-1 fw-bolder py-2 ">34<sup>o</sup>C</h4>
+                  <span><i class="fa-solid fa-sun fa-2x"></i></span>
+                  
+                </div>
+                <h5 class="fs-6">Sunny</h5>
+              </div>
+              <h6 class="mb-0 text-muted text-end card-footer border-dark">today</h6>
+              
+            </div> -->
+            <div class="card text-bg-dark mb-0 ">
+               <div class="card-header border-light fw-light text-light bg-transparent border-2 d-flex justify-content-center ">
+                <span class=" lh-1">friday</span>
+               </div>
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center ">
+                  <span><i class="fa-solid fa-sun fa-1x"></i></span>
+                  <h4 class="fs-1 fw-bolder pt-2 ">34<sup>o</sup>C</h4>
+                  <h4 class="fs-6 fw-bolder pb-2 ">34<sup>o</sup>C</h4>
+                  <h5 class="fs-6">Sunny</h5>
+                  
+                </div>
+                
+              </div>
+              <h6 class="card-footer mb-0 fw-light border-light text-white text-end">tomorrow</h6>
+              
+            </div>
+            <div class="card border-dark mb-0 ">
+               <div class="card-header bg-transparent border-2 border-dark d-flex justify-content-center ">
+                <span class="text-muted lh-1">friday</span>
+               </div>
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center ">
+                  <span><i class="fa-solid fa-sun fa-1x"></i></span>
+                  <h4 class="fs-1 fw-bolder pt-2 ">34<sup>o</sup>C</h4>
+                  <h4 class="fs-6 fw-bolder pb-2 ">34<sup>o</sup>C</h4>
+                  <h5 class="fs-6">Sunny</h5>
+                  
+                </div>
+                
+              </div>
+              <h6 class="card-footer mb-0 text-muted text-end border-dark">tomorrow</h6>
+              
+            </div>
+            
+           
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+ <footer class="text-bg-dark bg-black px-5 py-2 ">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-2 mx-auto">
+        <img src="imgs/main.jpg" class="w-100" alt="">
+      </div>
+     <div class="col-md-10 text-center">
+        <p class="text-light m-0 px-3">Thanks <span class = "text-capitalize"></span> for using our app  </p>
+        <div class="text-light m-0 d-flex flex-nowrap justify-content-center">
+          <p class="text-center">Our contact :</p>
+          <ul class="list-unstyled d-flex ps-3 gap-2 ">
+            <li class=""><a href="https://linktr.ee/mohameed0nassar" target="_blank" class="text-white"><i class="fa-solid fa-link"></i></a></li>
+            <li class=""><a href="https://github.com/mohameed0nassar/" class="text-white" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li class=""><a href="https://www.linkedin.com/in/mohameed0nassar" target="_blank" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class=""><a href="https://wa.me/+201125525478" class="text-success" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li class=""><a href="https://www.facebook.com/mohameed0nassar" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class=""><a href="https://twitter.com/mohameed0nassar" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            
+          </ul>
+        </div>
+     </div>
+    </div>
+  </div>
+ </footer>
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="js/sweetalert.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

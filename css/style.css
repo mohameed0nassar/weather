@@ -1,0 +1,53 @@
+
+.translate{
+    transform: translateX(-150px);
+}
+
+.app{
+    background-image: url(../imgs/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: top center;
+    min-height: 85vh;
+    background-color:#eee ;
+   
+}
+
+.nav-link{
+    
+    color: #26A9E1;
+}
+.main-color{
+    background-color: #26A9E1;
+}
+.f-1{
+    font-size: 4rem;
+}
+.card:first-child{
+background-color: #eee;
+border-right:0 ;   
+}
+.card:last-child{
+    
+    background-color: #eee;
+ border-left:0 !important;   
+}
+@media screen and (max-width:767px) {
+    .card{
+        border-radius: 0;
+    }
+    .card:first-child{
+    
+        border-radius: 5px 5px 0 0 !important;
+        border-bottom: 0;
+ border-right: solid 5px;   
+ 
+}
+.card:last-child{
+    border-top:0 ;
+    border-radius:0 0 5px 5px !important;
+    border: solid 3px #0cf !important;   
+
+    }
+    
+}
