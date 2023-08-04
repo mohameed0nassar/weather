@@ -9,7 +9,7 @@ navigator.geolocation.getCurrentPosition(
 
   
     var currentLoc = lat + "," + lng;
-    localStorage.remove('currentLoc')
+    
     localStorage.setItem('currentLoc', currentLoc)
     if (localStorage.getItem('search')!=null) {
       
