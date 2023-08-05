@@ -11,7 +11,7 @@ navigator.geolocation.getCurrentPosition(
     var currentLoc = lat + "," + lng;
     
     localStorage.setItem('currentLoc', currentLoc)
-    if (localStorage.getItem('search')!=null) {
+    if (localStorage.getItem('search')!=null&&localStorage.getItem('search')!='') {
       
       setUs(localStorage.getItem('search'))
     } else {
