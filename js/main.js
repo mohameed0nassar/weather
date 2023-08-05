@@ -83,7 +83,7 @@ function displayWether() {
   document.querySelector('.card-group').innerHTML = box;
 
 }
-function currentLocation(params) {
+function currentLocation() {
   setUs(localStorage.removeItem('search'))
   setUs(localStorage.getItem('currentLoc'))
 }
