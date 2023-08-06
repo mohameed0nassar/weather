@@ -14,9 +14,11 @@ navigator.geolocation.getCurrentPosition(
     if (localStorage.getItem('search')!=null&&localStorage.getItem('search')!='') {
       
       setUs(localStorage.getItem('search'))
-    } else {
+    } else if (localStorage.getItem('currentLoc')!=null&&localStorage.getItem('currentLoc')!=''){
       
       setUs(localStorage.getItem('currentLoc'))
+    }else {
+      setUs('cairo')
     }
   })
   
@@ -85,7 +87,9 @@ function displayWether() {
 }
 function currentLocation() {
   setUs(localStorage.removeItem('search'))
+  if(localStorage.getItem('currentLoc')!=null&&localStorage.getItem('currentLoc')!=''){
   setUs(localStorage.getItem('currentLoc'))
+  }else setUs('cairo')
 }
 brand.addEventListener('click', function () {
   currentLocation()
